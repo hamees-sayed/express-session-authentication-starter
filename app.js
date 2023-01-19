@@ -4,8 +4,8 @@ const session = require("express-session");
 const passport = require("passport");
 const crypto = require("crypto");
 const LocalStrategy = require("passport-local").Strategy;
-const verifyPassword = require("./lib/passwordUtils").verifyPassword;
-const genPassword = require("./lib/passwordUtils").genPassword;
+const verifyPassword = require("./passwordUtils").verifyPassword;
+const genPassword = require("./passwordUtils").genPassword;
 
 // Package documentation - https://www.npmjs.com/package/connect-mongo
 const MongoStore = require("connect-mongodb-session")(session);
